@@ -1,0 +1,42 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint           not null, primary key
+#  nome            :string
+#  email           :string
+#  data_nascimento :string
+#  telefone        :string
+#  cpf             :string
+#  perfil          :integer
+#  situacao        :integer
+#  endereco        :string
+#  complemento     :string
+#  observacoes     :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+one:
+  nome: MyString
+  email: MyString
+  data_nascimento: MyString
+  telefone: MyString
+  cpf: MyString
+  perfil: 1
+  situacao: 1
+  endereco: MyString
+  complemento: MyString
+  observacoes: MyString
+
+two:
+  nome: MyString
+  email: MyString
+  data_nascimento: MyString
+  telefone: MyString
+  cpf: MyString
+  perfil: 1
+  situacao: 1
+  endereco: MyString
+  complemento: MyString
+  observacoes: MyString
