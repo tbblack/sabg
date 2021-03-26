@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="shortcut icon" href="../images/favicon.png" type="image/png">-->
+
+  <title>Sistema de Aluguéis de Boardgames</title>
+
+  <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../lib/weather-icons/css/weather-icons.css">
+  <link rel="stylesheet" href="../lib/jquery-toggles/toggles-full.css">
+
+  <link rel="stylesheet" href="../css/quirk.css">
+
+  <script src="../lib/modernizr/modernizr.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="../lib/html5shiv/html5shiv.js"></script>
+  <script src="../lib/respond/respond.src.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <header>
+    <div class="headerpanel">
+
+      <div class="logopanel">
+        <h2><a href="home.html">SABG</a></h2>
+      </div><!-- logopanel -->
+
+      <div class="headerbar">
+
+        <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+
+        <div class="searchpanel">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar por...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+            </span>
+          </div><!-- input-group -->
+        </div>
+
+        <div class="header-right">
+          <ul class="headermenu">
+            <li>
+              <div class="btn-group">
+                <button type="button" class="btn btn-logged" data-toggle="dropdown">
+                  <img src="images/photos/loggeduser.png" alt="" />
+                  Rafael Brito
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                  <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i> Perfil</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Conta</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> Ajuda</a></li>
+                  <li><a href="signin.html"><i class="glyphicon glyphicon-log-out"></i> Sair</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div><!-- header-right -->
+      </div><!-- headerbar -->
+    </div><!-- header-->
+  </header>
+
+  <section>
+
+    <div class="leftpanel">
+      <div class="leftpanelinner">
+
+        <!-- ################## LEFT PANEL PROFILE ################## -->
+
+        <div class="media leftpanel-profile">
+          <div class="media-left">
+            <a href="#">
+              <img src="../images/photos/loggeduser.png" alt="" class="media-object img-circle">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Rafael Brito <a data-toggle="collapse" data-target="#loguserinfo" class="pull-right"><i class="fa fa-angle-down"></i></a></h4>
+            <span>Front End Developer</span>
+          </div>
+        </div><!-- leftpanel-profile -->
+
+        <div class="leftpanel-userinfo collapse" id="loguserinfo">
+          <h5 class="sidebar-title">Endereço</h5>
+          <address>
+            1104 Sul Alameda 14 Lote 07
+            Palmas Tocantins 77024-010
+          </address>
+          <h5 class="sidebar-title">Contato</h5>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <label class="pull-left">Email</label>
+              <span class="pull-right">rafaelima.brito@gmail.com</span>
+            </li>
+            <li class="list-group-item">
+              <label class="pull-left">Fixo</label>
+              <span class="pull-right">(063) 1234 567</span>
+            </li>
+            <li class="list-group-item">
+              <label class="pull-left">Celular</label>
+              <span class="pull-right">(63) 98126-3548</span>
+            </li>
+          </ul>
+        </div><!-- leftpanel-userinfo -->
+
+
+
+        <div class="tab-content">
+
+          <!-- ################# MAIN MENU ################### -->
+
+          <div class="tab-pane active" id="mainmenu">
+<!--            <h5 class="sidebar-title">Cadastros</h5>-->
+<!--            <ul class="nav nav-pills nav-stacked nav-quirk">-->
+<!--              <li><a href="perfil.html"><i class="fa fa-group"></i> <span>Perfis</span></a></li>-->
+<!--              <li><a href="black.html"><i class="fa fa-user"></i> <span>Usuário</span></a></li>-->
+<!--              <li><a href="black.html"><i class="fa fa-ticket"></i> <span>Etiquetas</span></a></li>-->
+<!--              <li><a href="categoria.html"><i class="fa fa-star"></i> <span>Categorias</span></a></li>-->
+<!--              <li><a href="black.html"><i class="fa fa-cubes"></i> <span>Jogos</span></a></li>-->
+<!--            </ul>-->
+
+            <h5 class="sidebar-title">Goblin Caolho</h5>
+            <ul class="nav nav-pills nav-stacked nav-quirk">
+              <li><a href="black.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
+              <li class="nav-parent">
+                <a href=""><i class="fa fa-user"></i> <span>Administrador
+                </span></a>
+                <ul class="children">
+                  <li><a href="perfis.html">Cadastro de Perfis</a></li>
+                  <li><a href="usuario.html">Cadastro de Usuário</a></li>
+                  <li><a href="categoria.html">Cadastro de Categorias</a></li>
+                  <li><a href="etiqueta.html">Cadastro de Etiquetas</a></li>
+                  <li><a href="empresa.html">Cadastro da Empresa</a></li>
+                  <li><a href="frete.html">Frete</a></li>
+
+
+                </ul>
+              </li>
+              <li class="nav-parent"><a href=""><i class="fa fa-group"></i> <span>Clientes</span></a>
+                <ul class="children">
+                  <li><a href="cliente.html">Cadastro de Clientes</a></li>
+                </ul>
+              </li>
+              <li class="nav-parent"><a href=""><i class="fa fa-cubes"></i> <span>Boardgames</span></a>
+                <ul class="children">
+                  <li><a href="boardgame.html">Cadastrar Boardgame</a></li>
+                  <li><a href="devolucao.html">Devolução</a></li>
+                  <li><a href="relatorio.html">Relatório</a></li>
+                </ul>
+              </li>
+              <li class="nav-parent "><a href=""><i class="fa fa-file-text"></i> <span>Relatórios</span></a>
+                <ul class="children">
+                  <li><a href="asset-manager.html">Pedidos</a></li>
+                  <li><a href="people-directory.html">Boardgame</a></li>
+                  <li><a href="timeline.html">Alugéis</a></li>
+                  <li><a href="profile.html">Clientes</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- tab-pane -->
+        </div><!-- tab-content -->
+
+      </div><!-- leftpanelinner -->
+    </div><!-- leftpanel -->
+
+    <div class="mainpanel">
+
+      <div class="contentpanel">
+
+        <ol class="breadcrumb breadcrumb-quirk">
+          <li><a href="index.html"><i class="fa fa-home mr5"></i> Home</a></li>
+          <li><a href="administrador.html">Administrador</a></li>
+          <li class="active">Frete</li>
+        </ol>
+
+
+
+      </div><!-- contentpanel -->
+    </div><!-- mainpanel -->
+</section>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/jquery-ui/jquery-ui.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/jquery-toggles/toggles.js"></script>
+
+<script src="../js/quirk.js"></script>
+
+</body>
+</html>
