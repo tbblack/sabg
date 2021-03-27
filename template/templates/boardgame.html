@@ -177,257 +177,229 @@
 
         <ol class="breadcrumb breadcrumb-quirk">
           <li><a href="index.html"><i class="fa fa-home mr5"></i> Home</a></li>
-          <li><a href="administrador.html">Administrador</a></li>
-          <li class="active">Cadastro Boardgame</li>
+          <li><a href="administrador.html">Boardgames</a></li>
+          <li class="active">Cadastro Boardgames</li>
         </ol>
 
         <section class="container-fluid">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="panel">
-                <div class="panel-heading">
-                  <h4 class="panel-title">Cadastro de Boardgames</h4>
-                </div>
+            <div class="col-md-12">
 
-                <div class="panel-body">
+              <h4 class="panel-title mb5">Cadastro de Boardgames</h4>
+              <p class="mb15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fuga laudantium qui.</p>
+
+              <div class="panel-group" id="accordion">
+                <div class="panel">
                   <div class="panel-heading">
-                    <h5 class="panel-title">Dados Pessoais</h5>
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseOne">
+                        Cadastro de Boardgames
+                      </a>
+                    </h4>
                   </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="col-sm-12 col-md-6 col-lg-12">
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                          <label for="idbgg"><strong>Id do BGG</strong></label>
+                          <input type="text" placeholder="Idbgg" class="form-control" id="idbgg"/>
+                        </div>
 
-                  <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                    <label for="name"><strong>Nome</strong></label>
-                    <input type="text" placeholder="Nome" class="form-control" id="name"/>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                          <label for="copia"><strong>Cópia</strong></label>
+
+                          <select id="copia" class="form-control" style="width: 100%" data-placeholder="Cópia">
+                            <option value="" >Cópia</option>
+                            <option value="copia1">Cópia 1</option>
+                            <option value="copia2 ">Cópia 2</option>
+                            <option value="copia3 ">Cópia 3</option>
+                            <option value="copia4 ">Cópia 4</option>
+                            <option value="copia5 ">Cópia 5</option>
+                            <option value="copia6 ">Cópia 6</option>
+                            <option value="copia7 ">Cópia 7</option>
+                            <option value="copia8 ">Cópia 8</option>
+                            <option value="copia9 ">Cópia 9</option>
+                            <option value="copia10 ">Cópia 10</option>
+                            <option value="copia10 ">Cópia A</option>
+                            <option value="copia10 ">Cópia B</option>
+                            <option value="copia10 ">Cópia C</option>
+                            <option value="copia10 ">Cópia D</option>
+                            <option value="copia10 ">Cópia E</option>
+                            <option value="copia10 ">Cópia F</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                          <label for="categoriabg"><strong>Categoria</strong></label>
+
+                          <select id="categoriabg" class="form-control" style="width: 100%" data-placeholder="Categoria">
+                            <option value="" >Categoria</option>
+                            <option value="euro">Eurogame</option>
+                            <option value="wargame ">Wargame</option>
+                            <option value="dungeon ">Dungeon Crawler</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                          <label for="situacao"><strong>Situação</strong></label>
+
+                          <select id="situacao" class="form-control" style="width: 100%" data-placeholder="Perfil">
+                            <option value="" >Situação</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                          <label for="name"><strong>Nome</strong></label>
+                          <input type="text" placeholder="Nome" class="form-control" id="name"/>
+                          <label for="name">Caso não tenha utilizado o código do IDBGG</label>
+
+                        </div>
+
+                        <div class="form-group nomargin col-sm-12 col-md-6 col-lg-4">
+                          <label for="name"><strong>Informações</strong></label>
+                          <textarea id="autosize" class="form-control" rows="3" placeholder="Visível aos clientes na galeria de board games"></textarea>
+                        </div>
+                      </div>
+
+                      <button class="btn btn-primary btn-quirk pull-right mt20 mr20">Salvar</button>
+
+                    </div>
+
                   </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="email"><strong>Email</strong></label>
-                    <input type="email" placeholder="Email" class="form-control" id="email"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="date"><strong>Data de Nascimento</strong></label>
-                    <input type="date" placeholder="Data de Nascimento" class="form-control" id="date"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="phone"><strong>Telefone</strong></label>
-                    <input type="phone" placeholder="Telefone" class="form-control" id="phone"/>
-                  </div>
-
-<!--                  <label for="phone"><strong>Telefone</strong></label>-->
-<!--                  <div class="input-group mb20 col-sm-12 col-sm-6 col-lg-3">-->
-<!--                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>-->
-<!--                    <input type="text" placeholder="Telefone" id="phone" class="form-control"/>-->
-<!--                  </div>-->
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" placeholder="CPF" class="form-control" id="cpf"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="senha"><strong>Perfil</strong></label>
-
-                    <select id="select1" class="form-control" style="width: 100%" data-placeholder="Perfil">
-                      <option value="" >Perfil</option>
-                      <option value="admin">Administrador</option>
-                      <option value="cliente ">Cliente</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="senha"><strong>Situação</strong></label>
-
-                    <select id="select2" class="form-control" style="width: 100%" data-placeholder="Perfil">
-                      <option value="" >Situação</option>
-                      <option value="ativo">Ativo</option>
-                      <option value="inativo">Inativo</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="senha"><strong>Senha</strong></label>
-                    <input type="password" placeholder="Senha" class="form-control" id="senha"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-4">
-                    <label for="confirm"><strong>Confirme a Senha</strong></label>
-                    <input type="password" placeholder="Confirme a Senha" class="form-control" id="confirm"/>
-                  </div>
-
-                  <div class="panel-heading col-sm-12">
-                    <h4 class="panel-title">Dados para Envio </h4>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-6">
-                    <label for="adress"><strong>Endereço</strong></label>
-                    <input type="text" placeholder="Endereço" class="form-control" id="adress"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-6">
-                    <label for="complemento"><strong>Complemento</strong></label>
-                    <input type="text" placeholder="Complemento" class="form-control" id="complemento"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-9">
-                    <label for="observacao"><strong>Observações</strong></label>
-                    <input type="text" placeholder="Observações" class="form-control" id="observacao"/>
-                  </div>
-
-                  <div class="form-group col-sm-12 col-sm-6 col-lg-3">
-                    <label for="cep"><strong>CEP</strong></label>
-                    <input type="text" placeholder="CEP" class="form-control" id="cep"/>
-                  </div>
-
-
-
-                  <button class="btn-quirk btn-primary pull-right">Salvar </button>
                 </div>
 
-                <div class="panel-heading">
-                  <h4 class="panel-title">Lista de Boardgames</h4>
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Lista de Categorias
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="table-responsive col-sm-12 col-md-6 col-md-offset-3">
+                        <table class="table nomargin">
+                          <thead>
+                          <tr>
+                            <th class="text-center">
+                              <label class="ckbox ckbox-primary">
+                                <input type="checkbox"><span></span>
+                              </label>
+                            </th>
+                            <th>Nome</th>
+                            <th>Cópia</th>
+                            <th>Situação</th>
+                            <th>Categoria</th>
+                            <th>Aluguéis</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="text-center">
+                              <label class="ckbox ckbox-primary">
+                                <input type="checkbox"><span></span>
+                              </label>
+                            </td>
+                            <td>Rising Sun</td>
+                            <td>Cópia 1</td>
+                            <td>Quarentena</td>
+                            <td>Wargame</td>
+                            <td>01</td>
+                            <td>
+                              <ul class="table-options">
+                                <li><a href=""><i class="fa fa-pencil"></i></a></li>
+                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                              </ul>
+                            </td>
+                          </tr><tr>
+                            <td class="text-center">
+                              <label class="ckbox ckbox-primary">
+                                <input type="checkbox"><span></span>
+                              </label>
+                            </td>
+                            <td>Rising Sun</td>
+                            <td>Cópia 1</td>
+                            <td>Quarentena</td>
+                            <td>Wargame</td>
+                            <td>01</td>
+                            <td>
+                              <ul class="table-options">
+                                <li><a href=""><i class="fa fa-pencil"></i></a></li>
+                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                              </ul>
+                            </td>
+                          </tr><tr>
+                            <td class="text-center">
+                              <label class="ckbox ckbox-primary">
+                                <input type="checkbox"><span></span>
+                              </label>
+                            </td>
+                            <td>Rising Sun</td>
+                            <td>Cópia 1</td>
+                            <td>Quarentena</td>
+                            <td>Wargame</td>
+                            <td>01</td>
+                            <td>
+                              <ul class="table-options">
+                                <li><a href=""><i class="fa fa-pencil"></i></a></li>
+                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                              </ul>
+                            </td>
+                          </tr>
+
+                          </tbody>
+                        </table>
+                      </div><!-- table-responsive -->
+                    </div><!-- panel -->
+                  </div>
                 </div>
-                <div class="panel-body">
-                  <div class="table-responsive">
-                    <table class="table nomargin">
-                      <thead>
-                      <tr>
-                        <th class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </th>
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Email</th>
-                        <th class="text-center">Telefone</th>
-                        <th class="text-right">Perfil</th>
-                        <th class="text-right">Situação</th>
-                        <th></th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>Rafael Brito </td>
-                        <td>000.000.000-00</td>
-                        <td>rafaelbrito@unitins.br</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Administrador</td>
-                        <td class="text-right">Ativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>Thales Barbosa</td>
-                        <td>000.000.000-00</td>
-                        <td>thales@unitins.br</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Administrador</td>
-                        <td class="text-right">Ativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>Zembe zembe</td>
-                        <td>000.000.000-00</td>
-                        <td>zzembe@gmail.com</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Cliente</td>
-                        <td class="text-right">Ativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>João da Silva </td>
-                        <td>000.000.000-00</td>
-                        <td>jsilva@gmail.br</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Administrador</td>
-                        <td class="text-right">Inativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>Roberto Souza</td>
-                        <td>000.000.000-00</td>
-                        <td>robertos@gmail.br</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Cliente</td>
-                        <td class="text-right">Inativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">
-                          <label class="ckbox ckbox-primary">
-                            <input type="checkbox"><span></span>
-                          </label>
-                        </td>
-                        <td>Zembe zembe</td>
-                        <td>000.000.000-00</td>
-                        <td>zzembe@gmail.com</td>
-                        <td class="text-center">(99) 99999-9999</td>
-                        <td class="text-right">Cliente</td>
-                        <td class="text-right">Ativo</td>
-                        <td>
-                          <ul class="table-options">
-                            <li><a href=""><i class="fa fa-pencil"></i></a></li>
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
-                          </ul>
-                        </td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div><!-- table-responsive -->
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Links Externos
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+
+                    <div class="panel-heading col-sm-12">
+                      <h4 class="panel-title">Link de Vídeo </h4>
+                    </div>
+                    <div class="panel-body">
+                      <div class="table-responsive col-sm-12 col-md-6">
+                        <label for="titlevideo"><strong>Título</strong></label>
+                        <input type="text" placeholder="Título" class="form-control" id="titlevideo"/>
+                      </div>
+                      <div class="table-responsive col-sm-12 col-md-6">
+                        <label for="linkvideo"><strong>Link</strong></label>
+                        <input type="text" placeholder="Link" class="form-control" id="linkvideo"/>
+                      </div>
+                    </div><!-- panel --><div class="panel-heading col-sm-12">
+                      <h4 class="panel-title">Link de Informações </h4>
+                    </div>
+                    <div class="panel-body">
+                      <div class="table-responsive col-sm-12 col-md-6">
+                        <label for="titleinfo"><strong>Título</strong></label>
+                        <input type="text" placeholder="Título" class="form-control" id="titleinfo"/>
+                      </div>
+                      <div class="table-responsive col-sm-12 col-md-6">
+                        <label for="linkinfo"><strong>Link</strong></label>
+                        <input type="text" placeholder="Link" class="form-control" id="linkinfo"/>
+                      </div>
+                      <button class="btn btn-primary btn-quirk pull-right mt20 mr20">Salvar</button>
+
+                    </div><!-- panel -->
+                  </div>
                 </div>
-              </div><!-- panel -->
-            </div>
-          </div>
+              </div>
+            </div><!-- col-md-6 -->
+          </div><!-- row -->
         </section>
 
       </div><!-- contentpanel -->
